@@ -1,7 +1,18 @@
 <html>
+  <head>
+    <script src="https://vuejs.org/js/vue.min.js"></script>
+  </head>
 <body>
-<h1>Kolly, you are awesome!!!</h1>
-<font color=green><H2>This is new one GREEN</h2></font>
-<marquee>hello, how are you!</marquee>
+  <div id='app'>
+    <p>{{ message }}</p>
+  </div>
+  <script>
+  new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello World!'
+    }
+  })
+  </script>
 </body>
 </html>
